@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Template Two</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+    <h1>Neil's Template Two</h1>
+
+    <h2>Display Dictionary Contents</h2>
+
+    <ul>
+        {% for game, name in my_dict.items() %}
+            <li> {{ game }}, {{ name }} </li>
+        {% endfor %}
+    </ul>
+
+    {{ bootstrap.load_js() }}
+
+
+</body>
+</html>
